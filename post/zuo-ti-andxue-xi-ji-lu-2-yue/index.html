@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>做题&amp;学习记录（2月） | Aegir</title>
-<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581066543131">
+<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581087942958">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="做题&amp;学习记录（2月） | Aegir - Atom Feed" href="https://Aegirss.github.io//atom.xml">
@@ -26,7 +26,7 @@ SCOI2015 小凸玩密室
       <div class="main-content">
         <div class="site-header">
   <a href="https://Aegirss.github.io/">
-  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581066543131" alt="">
+  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581087942958" alt="">
   </a>
   <h1 class="site-title">
     Aegir
@@ -96,7 +96,7 @@ SCOI2015 小凸玩密室
 <p><a href="https://www.luogu.com.cn/problem/P4253">SCOI2015 小凸玩密室</a></p>
 <p>首先注意到这是一颗完全二叉树，因为高度很小所以可以枚举每个点作为起点。<br>
 然后考虑树形DP，求出每个点往上爬的代价即可。</p>
-<pre><code>#include &lt;bits/stdc++.h&gt;
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
 typedef long long ll;
@@ -166,7 +166,7 @@ int main()
 <p><a href="https://www.luogu.com.cn/problem/P4344">SHOI2015 脑洞治疗仪</a></p>
 <p>线段树维护一个最大连续子段，修改的话可以在线段树上一层层递归下去，直到当前区间能全部一次改成1再修改，时间复杂度是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>l</mi><mi>o</mi><msup><mi>g</mi><mn>2</mn></msup><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nlog^2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>的。<br>
 数据结构题有点难写，放个代码吧。</p>
-<pre><code>#include&lt;bits/stdc++.h&gt;
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
 using namespace std;
 
 const int MAXN = 200010;
@@ -305,7 +305,7 @@ int main()
 <p><a href="https://www.luogu.com.cn/problem/P4585">FJOI2015 火星商店问题</a></p>
 <p>线段树套可持久化Trie，每个节点用Vector存一下时间，查询的时候二分即可。<br>
 顺便复习了一下可持久化结构。</p>
-<pre><code>#include &lt;bits/stdc++.h&gt;
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
 const int MAXN = 100010;
