@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://aegirss.github.io/</id>
+    <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-07T06:48:02.451Z</updated>
+    <updated>2020-02-07T08:09:47.400Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://aegirss.github.io/"/>
-    <link rel="self" href="https://aegirss.github.io/atom.xml"/>
+    <link rel="alternate" href="https://Aegirss.github.io/"/>
+    <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
     <subtitle>Think twice, code once.</subtitle>
-    <logo>https://aegirss.github.io/images/avatar.png</logo>
-    <icon>https://aegirss.github.io/favicon.ico</icon>
+    <logo>https://Aegirss.github.io/images/avatar.png</logo>
+    <icon>https://Aegirss.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Aegir</rights>
     <entry>
         <title type="html"><![CDATA[Test]]></title>
-        <id>https://aegirss.github.io/post/test</id>
-        <link href="https://aegirss.github.io/post/test">
+        <id>https://Aegirss.github.io/post/test</id>
+        <link href="https://Aegirss.github.io/post/test">
         </link>
         <updated>2020-02-07T06:23:50.000Z</updated>
         <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>o</mi><mtext> </mtext><mi>W</mi><mi>o</mi><mi>r</mi><mi>l</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">Hello \ World
