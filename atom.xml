@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-07T15:06:07.923Z</updated>
+    <updated>2020-02-07T16:01:59.022Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -349,6 +349,58 @@ int main()
 <p>二合一的题目，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>&lt;</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c_i&lt;=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6891em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>时贪心，否则做一个类似背包的树形DP即可。</p>
 <p><a href="https://www.luogu.com.cn/problem/P5043">BJOI2015 树的同构</a></p>
 <p>做法很多，什么最小表示法等等，不过直接简单粗暴的树哈希就可以了。</p>
+<h2 id="202027">2020.2.7</h2>
+<p>[<a href="https://www.luogu.com.cn/problem/P5502">JSOI2015 最大公约数</a></p>
+<p>有一个性质：长度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的序列的所有子序列的公约数最多只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">logn</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span></span></span></span>个<br>
+于是直接枚举右端点，维护这些公约数即可。<br>
+PS：这个性质在许多和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">gcd</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span></span></span></span>有关的题目中都挺好用的。</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+typedef long long ll;
+
+const int MAXN = 100010;
+
+ll gcd(ll a, ll b)
+
+{
+	if(!b) return a;
+	return gcd(b, a % b);
+
+}
+
+int n; ll ans, a[MAXN];
+ll pos[MAXN], num[MAXN];
+
+int main()
+{
+	scanf(&quot;%d&quot;, &amp;n);
+	for(int i = 1; i &lt;= n; ++i) scanf(&quot;%lld&quot;, &amp;a[i]);
+	int now = 0;
+	for(int i = 1; i &lt;= n; ++i)
+	{
+		++now;
+		pos[now] = i;
+		num[now] = a[i];
+		for(int j = now - 1; j; --j) num[j] = gcd(num[j], num[j + 1]);
+		int k = 0, j = 1;
+		while(j &lt;= now)
+		{
+			++k;
+			pos[k] = pos[j];
+
+			num[k] = num[j];
+
+			while(num[k] == num[j]) ++j;
+
+		}
+		now = k;
+		for(j = 1; j &lt;= now; ++j) ans = max(ans, (i - pos[j] + 1) * num[j]);
+	}
+	printf(&quot;%lld\n&quot;, ans);
+	return 0;
+}
+</code></pre>
 ]]></content>
     </entry>
     <entry>
