@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-07T16:02:42.225Z</updated>
+    <updated>2020-02-08T07:53:03.596Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -350,7 +350,7 @@ int main()
 <p><a href="https://www.luogu.com.cn/problem/P5043">BJOI2015 树的同构</a></p>
 <p>做法很多，什么最小表示法等等，不过直接简单粗暴的树哈希就可以了。</p>
 <h2 id="202027">2020.2.7</h2>
-<p>[<a href="https://www.luogu.com.cn/problem/P5502">JSOI2015 最大公约数</a></p>
+<p><a href="https://www.luogu.com.cn/problem/P5502">JSOI2015 最大公约数</a></p>
 <p>有一个性质：长度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的序列的所有子序列的公约数最多只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">logn</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span></span></span></span>个<br>
 于是直接枚举右端点，维护这些公约数即可。<br>
 PS：这个性质在许多和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">gcd</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span></span></span></span>有关的题目中都挺好用的。</p>
@@ -401,6 +401,9 @@ int main()
 	return 0;
 }
 </code></pre>
+<h2 id="202028">2020.2.8</h2>
+<p><a href="https://www.luogu.com.cn/problem/P3183">HAOI2016 食物链</a></p>
+<p>以前生物课上就脑补过这个问题，，直接按拓扑序DP就行了。</p>
 ]]></content>
     </entry>
     <entry>
