@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-08T07:53:03.596Z</updated>
+    <updated>2020-02-08T09:12:35.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -404,6 +404,8 @@ int main()
 <h2 id="202028">2020.2.8</h2>
 <p><a href="https://www.luogu.com.cn/problem/P3183">HAOI2016 食物链</a></p>
 <p>以前生物课上就脑补过这个问题，，直接按拓扑序DP就行了。</p>
+<p><a href="https://www.luogu.com.cn/problem/P2825">HEOI2016/TJOI2016 游戏</a></p>
+<p>二分图匹配，提取出所有连续的不含#的子段，在每一个*的地方连边即可。</p>
 ]]></content>
     </entry>
     <entry>
