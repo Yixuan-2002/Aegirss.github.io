@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>后缀自动机学习笔记 | Aegir</title>
-<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581587779447">
+<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581587913524">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="后缀自动机学习笔记 | Aegir - Atom Feed" href="https://Aegirss.github.io//atom.xml">
@@ -24,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://Aegirss.github.io/">
-  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581587779447" alt="">
+  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581587913524" alt="">
   </a>
   <h1 class="site-title">
     Aegir
@@ -181,7 +181,7 @@ int main()
 </li>
 </ul>
 <h2 id="例题">例题：</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3804">模板 后缀自动机 (SAM)</a></p>
+<h3 id="模板-后缀自动机-sam"><a href="https://www.luogu.com.cn/problem/P3804">模板 后缀自动机 (SAM)</a></h3>
 <p>设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">f_x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>表示SAM中节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>中最长的子串出现的次数，求出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span>后枚举每个节点，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>n</mi><mi>s</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>{</mo><msub><mi>f</mi><mi>x</mi></msub><mo>∗</mo><mi>l</mi><mi>e</mi><msub><mi>n</mi><mi>x</mi></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">ans=max\{f_x * len_x\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span>（因为一个等价类中子串出现次数都一样，所以当然是越长越好）。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">f_x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的求法很简单，就是一个简单的DAG上DP。</p>
 <pre><code class="language-cpp">void dfs(int x)
 {
@@ -193,7 +193,7 @@ int main()
 	if(f[x] &gt; 1) ans = max(ans, (ll)f[x] * t[x].len);
 }
 </code></pre>
-<p><a href="https://www.luogu.com.cn/problem/P3975">TJOI2015 弦论</a></p>
+<h3 id="tjoi2015-弦论"><a href="https://www.luogu.com.cn/problem/P3975">TJOI2015 弦论</a></h3>
 <p>设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>u</mi><msub><mi>m</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">sum_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>表示经过节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>的子串个数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>i</mi><msub><mi>z</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">siz_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.15em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>表示节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>所代表的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mi>n</mi><mi>d</mi><mi>p</mi><mi>o</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">endpos</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span></span></span></span>集合大小。</p>
 <p>两个数组的求法见代码，求出来之后利用它们拼凑出要求的子串即可。</p>
 <pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
@@ -266,7 +266,7 @@ int main()
 	return 0;
 }
 </code></pre>
-<p><a href="https://www.luogu.com.cn/problem/P4112">HEOI2015最短不公共子串</a></p>
+<h3 id="heoi2015最短不公共子串"><a href="https://www.luogu.com.cn/problem/P4112">HEOI2015最短不公共子串</a></h3>
 <p>先考虑子串，我们可以直接建出SAM。</p>
 <p>子序列怎么办？其实我们有后缀自动机，也有序列自动机，而且序列自动机比SAM简单得多。</p>
 <p>于是建出两个自动机，同时在它们上面跑广搜，遇到不匹配的即为答案。</p>
@@ -287,7 +287,7 @@ int main()
 	}
 }SSAM1, SSAM2;
 </code></pre>
-<p><a href="https://www.luogu.com.cn/problem/P4070">SDOI2016 生成魔咒</a></p>
+<h3 id="sdoi2016-生成魔咒"><a href="https://www.luogu.com.cn/problem/P4070">SDOI2016 生成魔咒</a></h3>
 <p>doing...</p>
 
               </div>
@@ -303,7 +303,14 @@ int main()
 </ul>
 </li>
 <li><a href="#%E6%9E%84%E5%BB%BA">构建：</a></li>
-<li><a href="#%E4%BE%8B%E9%A2%98">例题：</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98">例题：</a>
+<ul>
+<li><a href="#%E6%A8%A1%E6%9D%BF-%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA-sam">模板 后缀自动机 (SAM)</a></li>
+<li><a href="#tjoi2015-%E5%BC%A6%E8%AE%BA">TJOI2015 弦论</a></li>
+<li><a href="#heoi2015%E6%9C%80%E7%9F%AD%E4%B8%8D%E5%85%AC%E5%85%B1%E5%AD%90%E4%B8%B2">HEOI2015最短不公共子串</a></li>
+<li><a href="#sdoi2016-%E7%94%9F%E6%88%90%E9%AD%94%E5%92%92">SDOI2016 生成魔咒</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
