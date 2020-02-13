@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>后缀自动机学习笔记 | Aegir</title>
-<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581609816097">
+<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1581610490979">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="后缀自动机学习笔记 | Aegir - Atom Feed" href="https://Aegirss.github.io//atom.xml">
@@ -24,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://Aegirss.github.io/">
-  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581609816097" alt="">
+  <img class="avatar" src="https://Aegirss.github.io//images/avatar.png?v=1581610490979" alt="">
   </a>
   <h1 class="site-title">
     Aegir
@@ -295,6 +295,9 @@ int main()
 <p>注意到这个式子很像是求树上两点距离，于是想到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>t</mi><mtext> </mtext><mi>t</mi><mi>r</mi><mi>e</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">parent\ tree</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mspace"> </span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">e</span></span></span></span>。</p>
 <p>但是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>t</mi><mtext> </mtext><mi>t</mi><mi>r</mi><mi>e</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">parent\ tree</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mspace"> </span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">e</span></span></span></span>上两点的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>c</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">lca</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span></span></span></span>是它们的最长公共后缀。开一下脑洞，把字符串反过来建SAM，这样<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>c</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">lca</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span></span></span></span>就成了最长公共前缀。</p>
 <p>我们设边的权值为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>p</mi><mo>)</mo><mo>−</mo><mi>l</mi><mi>e</mi><mi>n</mi><mo>(</mo><mi>f</mi><mi>a</mi><mo>(</mo><mi>p</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">len(p) - len(fa(p))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>，这样就把问题转化成了树上所有路径的边权之和，直接枚举每条边，考虑它的贡献即可。</p>
+<h2 id="总结">总结：</h2>
+<p>后缀自动机的用途广泛而且容易构建，能解决许多关于子串，后缀的计数类问题，同时利用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>a</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>t</mi><mtext> </mtext><mi>t</mi><mi>r</mi><mi>e</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">parent\ tree</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mspace"> </span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">e</span></span></span></span>的性质我们还可以快速的求出最长公共前缀（后缀）。</p>
+<p><s>SAM = SA MAX</s>，个人感觉比起后缀数组，SAM更为强大，无论是代码复杂度还是时间复杂度都要优于后缀数组。</p>
 
               </div>
               <div class="toc-container">
@@ -318,6 +321,7 @@ int main()
 <li><a href="#ahoi2013-%E5%B7%AE%E5%BC%82">AHOI2013 差异</a></li>
 </ul>
 </li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结：</a></li>
 </ul>
 </li>
 </ul>
