@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-15T14:48:45.641Z</updated>
+    <updated>2020-02-15T16:02:44.941Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1039,6 +1039,8 @@ int main()
 <p>斜率优化DP，拆开式子化一下就好了。</p>
 <p><a href="https://www.luogu.com.cn/problem/P4093">HEOI2016/TJOI2016 序列</a></p>
 <p>DP的式子本质上是个三维偏序，CDQ分治。</p>
+<p><a href="https://www.luogu.com.cn/problem/P4340">SHOI2016 随机序列</a></p>
+<p>线段树。这题神啊。</p>
 ]]></content>
     </entry>
     <entry>
