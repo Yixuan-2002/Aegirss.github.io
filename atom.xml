@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-19T09:44:19.184Z</updated>
+    <updated>2020-02-19T09:45:37.229Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1047,7 +1047,7 @@ int main()
 <h2 id="2020218">2020.2.18</h2>
 <p><a href="https://www.luogu.com.cn/problem/P4336">SHOI2016 黑暗前的幻想乡</a></p>
 <p>容斥原理+Matrix-Tree定理。</p>
-<h1 id="2020219">2020.2.19</h1>
+<h2 id="2020219">2020.2.19</h2>
 <p><a href="https://www.luogu.com.cn/problem/P4124">CQOI2016 手机号码</a></p>
 <p>数位DP。</p>
 <p><a href="https://www.luogu.com.cn/problem/P4123">CQOI2016 不同的最小割</a></p>
