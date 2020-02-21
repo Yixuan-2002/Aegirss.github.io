@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-20T14:55:25.424Z</updated>
+    <updated>2020-02-21T03:32:59.966Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1057,6 +1057,9 @@ int main()
 <p>破解RSA加密，用Pollard rho算法分解质因数。</p>
 <p><a href="https://www.luogu.com.cn/problem/P4359">CQOI2016 伪光滑数</a></p>
 <p>用堆维护，枚举的时候要注意避免重复。</p>
+<h2 id="2020221">2020.2.21</h2>
+<p><a href="https://www.luogu.com.cn/problem/P4587">FJOI2016 神秘数</a></p>
+<p>主席树。</p>
 ]]></content>
     </entry>
     <entry>
