@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-22T09:00:59.273Z</updated>
+    <updated>2020-02-23T14:41:01.607Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1067,6 +1067,14 @@ int main()
 <h2 id="2020222">2020.2.22</h2>
 <p><a href="https://www.luogu.com.cn/problem/P4608">FJOI2016 所有公共子序列问题</a></p>
 <p>序列自动机上DP，注意这题要写压位高精。</p>
+<h2 id="2020223">2020.2.23</h2>
+<p>XJOI-提高</p>
+<p>T1：枚举每个数，直接模拟就行了。</p>
+<p>T2：把矩形沿着对角线对折，然后跑最短路。</p>
+<p>T3：不会，，写了个30分的DFS套DFS。</p>
+<p>XJOI-省选</p>
+<p>看了一下都不会做，，，前两个题写了个暴力</p>
+<p>T3随便写了写，居然有70分，，，</p>
 ]]></content>
     </entry>
     <entry>
