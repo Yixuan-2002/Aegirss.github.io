@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-23T14:43:27.491Z</updated>
+    <updated>2020-02-24T15:59:19.880Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1075,6 +1075,11 @@ int main()
 <p>XJOI-省选</p>
 <p>看了一下都不会做，，，前两个题写了个暴力</p>
 <p>T3随便写了写，居然有70分，，，</p>
+<h2 id="2020224">2020.2.24</h2>
+<p><a href="https://www.luogu.com.cn/problem/P3760">TJOI2017 异或和</a></p>
+<p>按位枚举，然后权值树状数组维护。</p>
+<p><a href="https://www.luogu.com.cn/problem/P3761">TJOI2017 城市</a></p>
+<p>枚举每条边，然后求一下两个联通块的半径和直径即可。</p>
 ]]></content>
     </entry>
     <entry>
