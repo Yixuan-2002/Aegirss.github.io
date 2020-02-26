@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-26T14:01:33.701Z</updated>
+    <updated>2020-02-26T14:40:47.408Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1083,6 +1083,8 @@ int main()
 <h2 id="2020226">2020.2.26</h2>
 <p><a href="https://www.luogu.com.cn/problem/P3745">六省联考2017 期末考试</a></p>
 <p>发现代价只与结束时间有关，枚举结束时间贪心即可。</p>
+<p><a href="https://www.luogu.com.cn/problem/P3750">六省联考2017 分手是祝愿</a></p>
+<p>神仙题啊！这个DP真的神奇。</p>
 ]]></content>
     </entry>
     <entry>
