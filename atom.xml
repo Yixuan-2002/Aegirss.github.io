@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-24T16:03:07.200Z</updated>
+    <updated>2020-02-26T14:01:33.701Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1080,6 +1080,9 @@ int main()
 <p>按位枚举，然后权值树状数组维护。</p>
 <p><a href="https://www.luogu.com.cn/problem/P3761">TJOI2017 城市</a></p>
 <p>枚举每条边，然后求一下两个联通块的半径和直径即可。</p>
+<h2 id="2020226">2020.2.26</h2>
+<p><a href="https://www.luogu.com.cn/problem/P3745">六省联考2017 期末考试</a></p>
+<p>发现代价只与结束时间有关，枚举结束时间贪心即可。</p>
 ]]></content>
     </entry>
     <entry>
