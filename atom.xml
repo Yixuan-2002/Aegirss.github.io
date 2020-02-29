@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-29T06:28:37.780Z</updated>
+    <updated>2020-02-29T16:04:36.396Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -1088,6 +1088,11 @@ int main()
 <h2 id="2020227">2020.2.27</h2>
 <p><a href="https://www.luogu.com.cn/problem/P3749">六省联考2017 寿司餐厅</a></p>
 <p>注意到权值不重复计算，从而想到最大权闭合子图，然后建图求最小割。</p>
+<h2 id="2020229">2020.2.29</h2>
+<p><a href="https://www.luogu.com.cn/problem/P3746">六省联考2017 组合数问题</a></p>
+<p>考虑组合意义，然后DP，矩阵加速。</p>
+<p><a href="https://www.luogu.com.cn/problem/P3705">SDOI2017 新生舞会</a></p>
+<p>分数规划套费用流</p>
 ]]></content>
     </entry>
     <entry>
