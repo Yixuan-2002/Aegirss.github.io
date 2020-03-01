@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-02-29T16:04:36.396Z</updated>
+    <updated>2020-03-01T11:48:55.847Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://Aegirss.github.io/images/avatar.png</logo>
     <icon>https://Aegirss.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Aegir</rights>
+    <entry>
+        <title type="html"><![CDATA[做题&学习记录（3月）]]></title>
+        <id>https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-4-yue/</id>
+        <link href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-4-yue/">
+        </link>
+        <updated>2020-03-01T11:47:43.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="202031">2020.3.1</h2>
+<p><a href="https://www.luogu.com.cn/problem/P3702">SDOI2017 序列计数</a></p>
+<p>容斥+矩阵快速幂</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[后缀自动机学习笔记]]></title>
         <id>https://Aegirss.github.io/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/</id>
