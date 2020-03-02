@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-01T16:14:12.819Z</updated>
+    <updated>2020-03-02T15:23:55.959Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -21,6 +21,9 @@
 <p>容斥+矩阵快速幂</p>
 <p><a href="https://www.luogu.com.cn/problem/P4427">BJOI2018 求和</a></p>
 <p>LCA+树上差分</p>
+<h2 id="202032">2020.3.2</h2>
+<p><a href="https://www.luogu.com.cn/problem/P4438">HNOI/AHOI2018 道路</a></p>
+<p>DP很好想，但是需要一些卡空间的技巧。</p>
 ]]></content>
     </entry>
     <entry>
