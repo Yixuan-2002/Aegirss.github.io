@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-02T15:23:55.959Z</updated>
+    <updated>2020-03-03T09:24:28.669Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -24,6 +24,9 @@
 <h2 id="202032">2020.3.2</h2>
 <p><a href="https://www.luogu.com.cn/problem/P4438">HNOI/AHOI2018 道路</a></p>
 <p>DP很好想，但是需要一些卡空间的技巧。</p>
+<h2 id="202033">2020.3.3</h2>
+<p><a href="https://www.luogu.com.cn/problem/P4588">TJOI2018 数学计算</a></p>
+<p>需要一点思维，转化成线段树。</p>
 ]]></content>
     </entry>
     <entry>
