@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-06T14:08:18.391Z</updated>
+    <updated>2020-03-06T14:54:22.644Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -36,6 +36,10 @@
 <h2 id="202036">2020.3.6</h2>
 <p><a href="https://www.luogu.com.cn/problem/P5687">CSP-SJX2019 网格图</a></p>
 <p>以行和列为单位进行Kruskal，注意细节。</p>
+<p><a href="https://www.luogu.com.cn/problem/P5689">CSP-SJX2019 多叉堆</a></p>
+<p>先推一下式子，然后并查集动态维护。</p>
+<p>感觉自己写代码经常会在一些细节上失误，明明很简单的题，时间却都浪费在了调试上。</p>
+<p>码力还是弱，要多练一下调试和查错。</p>
 ]]></content>
     </entry>
     <entry>
