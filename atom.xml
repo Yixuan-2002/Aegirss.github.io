@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-09T15:39:38.723Z</updated>
+    <updated>2020-03-09T15:44:38.944Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -49,7 +49,7 @@
 <h2 id="202039">2020.3.9</h2>
 <p>Noi Online PJ</p>
 <p>100+80+90=270</p>
-<p>感觉普及的平均难度还要高于提高，但是普及的部分分给得特别足。</p>
+<p>为什么普及的难度评分还要高于提高啊？</p>
 <p>T1：模拟题，注意细节。</p>
 <p>T2：整数拆分，考虑根号分治DP。</p>
 <p>T3：考虑Floyd的转移方式，然后矩阵快速幂加速。</p>
