@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-09T15:44:38.944Z</updated>
+    <updated>2020-03-10T14:52:42.862Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -53,6 +53,11 @@
 <p>T1：模拟题，注意细节。</p>
 <p>T2：整数拆分，考虑根号分治DP。</p>
 <p>T3：考虑Floyd的转移方式，然后矩阵快速幂加速。</p>
+<h2 id="2020310">2020.3.10</h2>
+<p><a href="https://www.luogu.com.cn/problem/P6190">NOI Online 入门组 魔法</a></p>
+<p><a href="https://www.luogu.com.cn/problem/P6189">NOI Online 入门组 跑步</a></p>
+<p>完善了这两题的代码，做法和之前口胡的一样。</p>
+<p>好像有个叫五边形数定理的东西很神奇，明天研究一下。</p>
 ]]></content>
     </entry>
     <entry>
