@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-14T07:29:41.159Z</updated>
+    <updated>2020-03-14T15:34:54.249Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -64,6 +64,9 @@
 <h2 id="2020314">2020.3.14</h2>
 <p><a href="https://www.luogu.com.cn/problem/P4559">JSOI2018 列队</a></p>
 <p>不改变相对顺序即为一种最优方案，用主席树维护。</p>
+<p><a href="https://www.luogu.com.cn/problem/P4577">FJOI2018 领导集团问题</a></p>
+<p>先假设可以“修改权值”，从而使不连通的问题变成一个联通的问题。</p>
+<p>这样就可以DP了，然后维护差分后的后缀<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">max</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span></span></span></span>数组优化。</p>
 ]]></content>
     </entry>
     <entry>
