@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-17T12:08:03.286Z</updated>
+    <updated>2020-03-17T16:18:01.936Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -85,6 +85,9 @@
 <p><a href="https://www.luogu.com.cn/problem/P4437">HNOI/AHOI2018 排列</a></p>
 <p>连边转化成图论，然后贪心。</p>
 <p>有点卡常，要手写个可修改的堆。</p>
+<p><a href="https://www.luogu.com.cn/problem/P4456">CQOI2018 交错序列</a></p>
+<p>二项式定理+矩阵快速幂。</p>
+<p>卡常 卡常 卡常 卡常 卡常 卡常</p>
 ]]></content>
     </entry>
     <entry>
