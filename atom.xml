@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-21T15:20:00.249Z</updated>
+    <updated>2020-03-22T08:48:20.365Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -100,19 +100,21 @@
 <p><a href="https://www.luogu.com.cn/problem/P5323">BJOI2019 光线</a></p>
 <p>数学题，列出方程解递推式。</p>
 <h2 id="2020320">2020.3.20</h2>
-<p>JOISC 2020 Day1 T1</p>
+<p>JOISC 2020 Round 1 T1</p>
 <p>注意到A,B两个序列都必须各选N个数字的限制很烦人，先不考虑它，显然可以直接贪心得到一种方案。</p>
 <p>然后考虑改动这个方案使它满足限制条件，显然是需要更换一些位置所选的数。注意到此时贪心地换数字不一定是最优，于是考虑DP：令<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mn>0</mn><mi mathvariant="normal">/</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i,0/1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04964em;vertical-align:-0.3551999999999999em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.34480000000000005em;"><span style="top:-2.5198em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mtight">0</span><span class="mord mtight">/</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3551999999999999em;"><span></span></span></span></span></span></span></span></span></span>为前<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>个数，第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>个数选择了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi mathvariant="normal">/</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">A/B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>序列，最多能更换几个数，然后记录DP的路径，沿着路径修改方案即可。</p>
 <p><a href="https://www.luogu.com.cn/problem/P5324">BJOI2019 删数</a></p>
 <p>结论+线段树。细节有点多，注意平移时候的位置变换。</p>
 <h2 id="2020321">2020.3.21</h2>
-<p>JOISC 2020 Day2</p>
+<p>JOISC 2020 Round 2</p>
 <p>看了会题，好像都没什么思路。</p>
 <p>话说JOI的部分分好低啊，写满了也只有十几分，感觉像在打ACM。</p>
 <p><a href="https://www.luogu.com.cn/problem/P5319">BJOI2019 奥术神杖</a></p>
 <p>注意到这个式子随便一算就会炸掉longlong的范围。</p>
 <p>对于这种又是乘法又是次幂的式子，我们可以直接在两边取对数（乘法变加法，次幂变乘法）。</p>
 <p>取完对数后发现这个式子就是一个分数规划，检验的时候在AC自动机上跑DP即可。</p>
+<h2 id="2020322">2020.3.22</h2>
+<p>JOISC 2020 Round 3</p>
 ]]></content>
     </entry>
     <entry>
