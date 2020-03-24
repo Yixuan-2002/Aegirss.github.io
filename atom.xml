@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-03-22T14:51:32.010Z</updated>
+    <updated>2020-03-24T14:44:20.410Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -118,6 +118,9 @@
 <p><a href="https://www.luogu.com.cn/problem/P5338">TJOI2019 甲苯先生的滚榜</a></p>
 <p>读完题就知道用平衡树维护，注意常数优化即可。</p>
 <p>反复看了好几遍，想不到都9102年了，还有省选题直接出成模板题的。</p>
+<h2 id="2020324">2020.3.24</h2>
+<p><a href="https://www.luogu.com.cn/problem/P4462">CQOI2018 异或序列</a></p>
+<p>异或的逆运算就是它本身，利用这个性质可以很方便的利用莫队进行处理。</p>
 ]]></content>
     </entry>
     <entry>
