@@ -1,306 +1,98 @@
+<html>
 <head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>做题&amp;学习记录（2月） | Aegir</title>
+<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1585486724836">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="2020.2.3
-学了一点多项式理论，感觉似懂非懂。。
-SCOI2015 小凸玩密室
-首先注意到这是一颗完全二叉树，因为高度很小所以可以枚举每个点作为起点。
-然后考虑树形DP，求出每个点往上爬的代价即可。
-#include &lt;bits..." />
-    <meta name="keywords" content="总结" />
-    <link rel="stylesheet" href="https://Aegirss.github.io//media/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/vs2015.min.css">
-              
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://Aegirss.github.io//media/css/bootstrap.min.css">
-    <title>Aegir</title>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 </head>
-
 <body>
-    <!-- 响应式布局，针对PC端内容显示 -->
-    <div id="content">
-        <div class="nav-large">
-            <div class="row">
-                <div class="side"><html>
-
-<head>
-    <link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
-    <meta name="description" content="Think twice, code once." />
-    <title>Document</title>
-</head>
-<style>
-</style>
-
-<body>
-    <div id=side>
-        <div class="avatar-border">
-            <img src="https://Aegirss.github.io//images/avatar.png?v=1585485936880" class="avatar">
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Aegir
         </div>
-        <div class="sitename">Aegir</div>
-        <span class="describtion" data-text='["Think twice, code once."]'>&nbsp;</span>
-        
-        <div class="search">
-            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
-            <div class="search-results"></div>
-        </div>
-        
-    <div class="share-button">
-        <span>Contact</span>
-        
-        <a href="https://github.com/Aegirss" target="_blank"><i><img class="icon"
-                    src="https://Aegirss.github.io//media/images/github.png" alt=""></i></a>
-        
-        
-        
-        
-        
-        
     </div>
-    <div id="qq" style="display:none"></div>
-    
-    
-    <div class="mchocie describtion">
-        <a href="/" class="menubutton">
-            首页
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a href="/archives" class="menubutton">
-            归档
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a href="/tags" class="menubutton">
-            标签
-        </a>
-    </div>
-    
-    
-    
-        <div class="mchocie describtion">
-            <a href="https://Aegirss.github.io//friends" class="menubutton">友链</a>
-        </div>
-    
-    <hr>
-    <div id="footinfo">Powered by  <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: Fog</div>
-    <div id="sitegotimeDate">载入天数...</div>
-    <div id="sitegotimes">载入时分秒...</div>
-    <div id="cussitetime" style="display:none">02/02/2020</div>
-    </div>
-</body>
-
-</html>
-<script src="https://Aegirss.github.io//media/js/wordshow.js"></script>
-<script>
-    //----------------------站点运行时间
-    var now = new Date();
-
-    function createtime() {
-        var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
-        var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间 
-        now.setTime(now.getTime() + 250);
-        days = (now - grt) / 1000 / 60 / 60 / 24;
-        dnum = Math.floor(days);
-        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
-        hnum = Math.floor(hours);
-        if (String(hnum).length == 1) {
-            hnum = "0" + hnum;
-        }
-        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes);
-        if (String(mnum).length == 1) {
-            mnum = "0" + mnum;
-        }
-        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds);
-        if (String(snum).length == 1) {
-            snum = "0" + snum;
-        }
-        document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
-        document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    }
-    setInterval("createtime()", 250);
-
-    //-------------------------------------------------搜索
-    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-    var searchInput = document.querySelector('.search-input');
-    var searchResults = document.querySelector('.search-results');
-
-    // 申明保存文章的标题、链接、内容的数组变量
-    var searchValue = '',
-        arrItems = [],
-        arrLinks = [],
-        arrTitles = [],
-        arrResults = [],
-        indexItem = [],
-        itemLength = 0;
-    var tmpDiv = document.createElement('div');
-    tmpDiv.className = 'result-item';
-
-    // ajax 的兼容写法
-    var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            xml = xhr.responseXML;
-            arrItems = xml.getElementsByTagName('entry');
-            itemLength = arrItems.length;
-            console.log(arrItems);
-            // 遍历并保存所有文章对应的标题、链接、内容到对应的数组中
-            // 同时过滤掉 HTML 标签
-            for (i = 0; i < itemLength; i++) {
-                var link = arrItems[i].getElementsByTagName('link')[0];
-                arrLinks[i] = link.getAttribute("href");
-                arrTitles[i] = arrItems[i].getElementsByTagName('title')[0].
-                childNodes[0].nodeValue.replace(/<.*?>/g, '');
-            }
-        }
-    }
-
-    // 开始获取根目录下 feed.xml 文件内的数据
-    xhr.open('get', '/atom.xml', true);
-    xhr.send();
-
-
-
-    // 输入框内容变化后就开始匹配，可以不用点按钮
-    // 经测试，onkeydown, onchange 等方法效果不太理想，
-    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
-    // 并且可以处理中文输入法拼写的变化
-    searchInput.oninput = function () {
-        setTimeout(searchConfirm, 0);
-    }
-    searchInput.onfocus = function () {
-        searchResults.style.display = 'block';
-    }
-
-    function searchConfirm() {
-        if (searchInput.value == '') {
-            searchResults.style.display = 'none';
-        } else if (searchInput.value.search(/^\s+$/) >= 0) {
-            // 检测输入值全是空白的情况
-            searchInit();
-            var itemDiv = tmpDiv.cloneNode(true);
-            itemDiv.innerText = '请输入有效内容...';
-            searchResults.appendChild(itemDiv);
-        } else {
-            // 合法输入值的情况
-            searchInit();
-            searchValue = searchInput.value;
-            // 在标题、内容中查找
-            searchMatching(arrTitles, searchValue);
-        }
-    }
-
-    // 每次搜索完成后的初始化
-    function searchInit() {
-        arrResults = [];
-        indexItem = [];
-        searchResults.innerHTML = '';
-        searchResults.style.display = 'block';
-    }
-
-    function searchMatching(arr1, input) {
-        // 忽略输入大小写
-        input = new RegExp(input, 'i');
-        // 在所有文章标题、内容中匹配查询值
-        for (i = 0; i < itemLength; i++) {
-            if (arr1[i].search(input) !== -1) {
-                var arr = arr1;
-                indexItem.push(i); // 保存匹配值的索引
-                var indexContent = arr[i].search(input);
-                // 此时 input 为 RegExp 格式 /input/i，转换为原 input 字符串长度
-                var l = input.toString().length - 3;
-                var step = 10;
-
-                // 将匹配到内容的地方进行黄色标记，并包括周围一定数量的文本
-                arrResults.push(arr[i].slice(indexContent - step, indexContent) +
-                    '<mark>' + arr[i].slice(indexContent, indexContent + l) + '</mark>' +
-                    arr[i].slice(indexContent + l, indexContent + l + step));
-            }
-        }
-
-        // 输出总共匹配到的数目
-        var totalDiv = tmpDiv.cloneNode(true);
-        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
-        searchResults.appendChild(totalDiv);
-
-        // 未匹配到内容的情况
-        if (indexItem.length == 0) {
-            var itemDiv = tmpDiv.cloneNode(true);
-            itemDiv.innerText = '未匹配到内容...';
-            searchResults.appendChild(itemDiv);
-        }
-
-        // 将所有匹配内容进行组合
-        for (i = 0; i < arrResults.length; i++) {
-            var itemDiv = tmpDiv.cloneNode(true);
-            itemDiv.innerHTML = '<b>[' + arrTitles[indexItem[i]] +
-                ']</b><p>' + arrResults[i] + "</p><hr />";
-            itemDiv.setAttribute('onclick', 'changeHref(arrLinks[indexItem[' + i + ']])');
-            searchResults.appendChild(itemDiv);
-        }
-    }
-
-    function changeHref(href) {
-        location.href = href;
-    }
-
-    function showqq() {
-        var qq = document.getElementById("qq").innerHTML;
-        if (qq != '')
-            alert("博主的QQ联系方式为：" + qq);
-        else
-            alert("博主暂未设置QQ联系方式");
-    }
-</script></div>
-                <div id="tab1" class="tab">
-                    <div class="bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div id="main" class="col-xs-12 col-sm-7">
-                    <link rel="stylesheet" href="https://Aegirss.github.io//media/css/font-awesome.css">
-<style>
-
-</style>
-
-<body>
-    <div class="allcontent">
-        <div class="postshow">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
-                <img src="\media\images\custom-postdefaultimage.jpg" class="postimage">
-            </div>
-            <div class="postinfo">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-02-07</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 17 min read</div>
-                <div class="posttag">
+                <div class="nav-item">
                     
-                    <a href="https://Aegirss.github.io/tag/1BGdjUVip/" class="postlink">
-                        <i class="fa fa-tag"></i> 总结
-                    </a>
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
                     
                 </div>
-            </div>
             
-            <div id="texttitle" style="text-align: center">
-                <h2>做题&amp;学习记录（2月）</h2>
-            </div>
-            <div class="text ">
-                <h2 id="202023">2020.2.3</h2>
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    做题&amp;学习记录（2月）
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-02-07 ·
+                    </time>
+                    
+                        <a href="https://Aegirss.github.io/tag/1BGdjUVip/" class="post-tags">
+                            # 总结
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="202023">2020.2.3</h2>
 <p>学了一点多项式理论，感觉似懂非懂。。</p>
 <p><a href="https://www.luogu.com.cn/problem/P4253">SCOI2015 小凸玩密室</a></p>
 <p>首先注意到这是一颗完全二叉树，因为高度很小所以可以枚举每个点作为起点。<br>
@@ -774,752 +566,21 @@ int main()
 <p><a href="https://www.luogu.com.cn/problem/P3705">SDOI2017 新生舞会</a></p>
 <p>分数规划套费用流</p>
 
-            </div>
-            
-            <div class="prev-post">
-                上一篇
-                <a href="https://Aegirss.github.io/post/du-jiao-shai/">
-                    杜教筛
-                </a>
-            </div>
-            
-            
+                </div>
+            </article>
+        </div>
+
+        
             <div class="next-post">
-                下一篇
-                <a href="https://Aegirss.github.io/post/mo-bi-wu-si-fan-yan/">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://Aegirss.github.io/post/mo-bi-wu-si-fan-yan/" class="post-title gt-a-link">
                     莫比乌斯反演
                 </a>
             </div>
+        
+
+        
             
-        </div>
-    </div>
-</body>
-<script>
-    var t_img; // 定时器
-    var isLoad = true; // 控制变量
-    isImgLoad(function () {
-        // 加载完成
-        $('.postdetailimg').css("display", "block");
-    });
-    // 判断图片加载的函数
-    function isImgLoad(callback) {
-        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
-        // 查找所有封面图，迭代处理
-        $('.postdetailimg').each(function () {
-            // 找到为0就将isLoad设为false，并退出each
-            if (this.height === 0) {
-                isLoad = false;
-                return false;
-            }
-        });
-        // 为true，没有发现为0的。加载完毕
-        if (isLoad) {
-            clearTimeout(t_img); // 清除定时器
-            // 回调函数
-            callback();
-            // 为false，因为找到了没有加载完成的图，将调用定时器递归
-        } else {
-            isLoad = true;
-            t_img = setTimeout(function () {
-                isImgLoad(callback); // 递归扫描
-            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
-        }
-    }
-</script>
-                    <div name="comment" style="background: white">
-                        <div class="commentcontainer">
-                            
-                            
-                            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-                            
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="toc-container">
-                    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#202023">2020.2.3</a></li>
-<li><a href="#202024">2020.2.4</a></li>
-<li><a href="#202025">2020.2.5</a></li>
-<li><a href="#202026">2020.2.6</a></li>
-<li><a href="#202027">2020.2.7</a></li>
-<li><a href="#202028">2020.2.8</a></li>
-<li><a href="#202029">2020.2.9</a></li>
-<li><a href="#2020210">2020.2.10</a></li>
-<li><a href="#2020211">2020.2.11</a></li>
-<li><a href="#2020212">2020.2.12</a></li>
-<li><a href="#2020213">2020.2.13</a></li>
-<li><a href="#2020215">2020.2.15</a></li>
-<li><a href="#2020216">2020.2.16</a></li>
-<li><a href="#2020218">2020.2.18</a></li>
-<li><a href="#2020219">2020.2.19</a></li>
-<li><a href="#2020220">2020.2.20</a></li>
-<li><a href="#2020221">2020.2.21</a></li>
-<li><a href="#2020222">2020.2.22</a></li>
-<li><a href="#2020223">2020.2.23</a></li>
-<li><a href="#2020224">2020.2.24</a></li>
-<li><a href="#2020226">2020.2.26</a></li>
-<li><a href="#2020227">2020.2.27</a></li>
-<li><a href="#2020229">2020.2.29</a></li>
-</ul>
-</li>
-</ul>
-
-                </div>
-            </div>
-        </div>
-        <div id="bg">
-        </div>
-        <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
-    </div>
-    <!-- 响应式布局，针对手机端内容显示 -->
-    <div class="nav-small">
-        <head>
-
-  <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://Aegirss.github.io//media/css/bootstrap.min.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Aegir&nbsp;&nbsp;|</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          
-          
-          <li>
-            <a href="/">
-              首页
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/archives">
-              归档
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/tags">
-              标签
-            </a>
-          </li>
-          
-          
-          
-          <li><a href="https://Aegirss.github.io//friends">友链</a></li>
-
-          
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- 引入BootStrap核心js文件 -->
-  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-        <div style="margin-top:30px"></div>
-        <link rel="stylesheet" href="https://Aegirss.github.io//media/css/font-awesome.css">
-<style>
-
-</style>
-
-<body>
-    <div class="allcontent">
-        <div class="postshow">
-            
-            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
-                <img src="\media\images\custom-postdefaultimage.jpg" class="postimage">
-            </div>
-            <div class="postinfo">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-02-07</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 17 min read</div>
-                <div class="posttag">
-                    
-                    <a href="https://Aegirss.github.io/tag/1BGdjUVip/" class="postlink">
-                        <i class="fa fa-tag"></i> 总结
-                    </a>
-                    
-                </div>
-            </div>
-            
-            <div id="texttitle" style="text-align: center">
-                <h2>做题&amp;学习记录（2月）</h2>
-            </div>
-            <div class="text ">
-                <h2 id="202023">2020.2.3</h2>
-<p>学了一点多项式理论，感觉似懂非懂。。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4253">SCOI2015 小凸玩密室</a></p>
-<p>首先注意到这是一颗完全二叉树，因为高度很小所以可以枚举每个点作为起点。<br>
-然后考虑树形DP，求出每个点往上爬的代价即可。</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-typedef long long ll;
-const int MAXN = 200010;
-#define p(i, j) (((1 &lt;&lt; (j - 1)) &lt;= i) ? (i &gt;&gt; j) : -1)
-#define b(i, j) ((i &gt;&gt; (j - 1)) ^ 1)
-#define ls (i &lt;&lt; 1)
-#define rs (i &lt;&lt; 1 | 1)
-
-int n; ll num[MAXN];
-ll dis[MAXN][20], dp[MAXN][20][2];
-
-int main()
-{
-    scanf(&quot;%d&quot;, &amp;n);
-    for(int i = 1; i &lt;= n; ++i) scanf(&quot;%lld&quot;, &amp;num[i]);
-    for(int i = 2; i &lt;= n; ++i)
-    {
-        scanf(&quot;%lld&quot;, &amp;dis[i][1]);
-        for(int j = 2; ~p(i, j); ++j) dis[i][j] = dis[i][1] + dis[p(i, 1)][j - 1];
-    }
-    for(int i = n; i; --i)
-        for(int j = 1; ~p(i, j); ++j)
-        {
-            dp[i][j][0] = dp[i][j][1] = 0x3f3f3f3f3f3f3f3f;
-            int lson = ls, rson = rs;
-            if((i &lt;&lt; 1) &gt; n)
-            {
-                dp[i][j][0] = dis[i][j] * num[p(i, j)];
-                dp[i][j][1] = (dis[i][j] + dis[b(i, j)][1]) * num[b(i, j)];
-            }
-            else if((i &lt;&lt; 1 | 1) &gt; n)
-            {
-                dp[i][j][0] = dis[ls][1] * num[ls] + dp[ls][j + 1][0];
-                dp[i][j][1] = dis[ls][1] * num[ls] + dp[ls][j + 1][1];
-            }
-            else
-            {
-                dp[i][j][0] = min(dp[i][j][0], dis[ls][1] * num[ls] + dp[ls][1][1] + dp[rs][j + 1][0]);
-                dp[i][j][0] = min(dp[i][j][0], dis[rs][1] * num[rs] + dp[rs][1][1] + dp[ls][j + 1][0]);
-                dp[i][j][1] = min(dp[i][j][1], dis[ls][1] * num[ls] + dp[ls][1][1] + dp[rs][j + 1][1]);
-                dp[i][j][1] = min(dp[i][j][1], dis[rs][1] * num[rs] + dp[rs][1][1] + dp[ls][j + 1][1]);
-            }
-        }
-    ll ans = 0x3f3f3f3f3f3f3f3f;
-    for(int s = 1; s &lt;= n; ++s)
-    {
-        ll tmp = dp[s][1][0];
-        for(int i = p(s, 1), lst = s; ~i; i = p(i, 1), lst = p(lst, 1))
-        {
-            if(b(lst, 1) &lt;= n) tmp += dis[b(lst, 1)][1] * num[b(lst, 1)] + dp[b(lst, 1)][2][0];
-            else tmp += dis[i][1] * num[p(i, 1)];
-        }
-        ans = min(ans, tmp);
-    }
-    printf(&quot;%lld\n&quot;, ans);
-    return 0;
-}
-</code></pre>
-<h2 id="202024">2020.2.4</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4251">SCOI2015 小凸玩矩阵</a></p>
-<p>二分，然后最大流判定即可。</p>
-<p><a href="https://www.luogu.com.cn/record/30108560">YNOI2019 排队</a><br>
-<a href="https://www.luogu.com.cn/problem/T79956">YNOI2019 数字游戏</a><br>
-<a href="https://www.luogu.com.cn/problem/T79958">YNOI2019 逆序对</a></p>
-<p>做了一下隔壁省的省选题，，这也太水了。。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4344">SHOI2015 脑洞治疗仪</a></p>
-<p>线段树维护一个最大连续子段，修改的话可以在线段树上一层层递归下去，直到当前区间能全部一次改成1再修改，时间复杂度是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>l</mi><mi>o</mi><msup><mi>g</mi><mn>2</mn></msup><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nlog^2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>的。<br>
-数据结构题有点难写，放个代码吧。</p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-
-const int MAXN = 200010;
-#define ls (o &lt;&lt; 1)
-#define rs (o &lt;&lt; 1 | 1)
-
-struct Node
-{
-   int l, r, lazy;
-   int sum, Sum;
-}t[MAXN &lt;&lt; 2];
-
-int n, m, tot, cnt;
-
-Node pushup(int l, int r, Node a, Node b, int tag)
-{
-   Node o = (Node){a.l, b.r, tag, a.r + b.l, a.Sum + b.Sum};
-   int mid = (l + r) &gt;&gt; 1;
-   if(a.l == mid - l + 1) o.l += b.l;
-   if(b.r == r - mid) o.r += a.r;
-   o.sum = max(o.sum, max(a.sum, b.sum));
-   o.sum = max(o.sum, max(o.l, o.r));
-   return o;
-}
-
-void pushdown(int o, int l, int r)
-{
-   int tag = t[o].lazy;
-   t[o].lazy = -1;
-   if(tag == -1) return;
-   int mid = (l + r) &gt;&gt; 1;
-   t[ls].Sum = tag * (mid - l + 1);
-   t[ls].sum = t[ls].l = t[ls].r = (tag == 0) * (mid - l + 1);
-   t[ls].lazy = tag;
-   t[rs].Sum = tag * (r - mid);
-   t[rs].sum = t[rs].l = t[rs].r = (tag == 0) * (r - mid);
-   t[rs].lazy = tag;
-}
-
-void change0(int o, int l, int r, int L, int R)
-{
-   if(l == L &amp;&amp; r == R)
-   {
-       t[o].Sum = 0;
-       t[o].sum = t[o].l = t[o].r = r - l + 1;
-       t[o].lazy = 0;
-       return;
-   }
-   pushdown(o, l, r);
-   int mid = (l + r) &gt;&gt; 1;
-   if(R &lt;= mid) change0(ls, l, mid, L, R);
-   else if(L &gt; mid) change0(rs, mid + 1, r, L, R);
-   else change0(ls, l, mid, L, mid), change0(rs, mid + 1, r, mid + 1, R);
-   t[o] = pushup(l, r, t[ls], t[rs], t[o].lazy);
-}
-
-void change1(int o, int l, int r)
-{
-   if(!cnt) return;
-   if(t[o].Sum == r - l + 1) return;
-   if(!t[o].Sum &amp;&amp; cnt &gt;= r - l + 1)
-   {
-       t[o].Sum = r - l + 1;
-       t[o].sum = t[o].l = t[o].r = 0;
-       t[o].lazy = 1;
-       cnt -= r - l + 1, tot += r - l + 1;
-       return;
-   }
-   if(l &gt;= r) return;
-   pushdown(o, l, r);
-   int mid = (l + r) &gt;&gt; 1;
-   change1(ls, l, mid); change1(rs, mid + 1, r);
-   t[o] = pushup(l, r, t[ls], t[rs], t[o].lazy);
-}
-
-void modify(int o, int l, int r, int L, int R, int tag)
-{
-   if(tot &gt;= tag) return;
-   if(l == L &amp;&amp; r == R)
-   {
-       cnt = tag - tot;
-       change1(o, l, r);
-       return;
-   }
-   pushdown(o, l, r);
-   int mid = (l + r) &gt;&gt; 1;
-   if(R &lt;= mid) modify(ls, l, mid, L, R, tag);
-   else if(L &gt; mid) modify(rs, mid + 1, r, L, R, tag);
-   else modify(ls, l, mid, L, mid, tag), modify(rs, mid + 1, r, mid + 1, R, tag);
-   t[o] = pushup(l, r, t[ls], t[rs], t[o].lazy);
-}
-
-int ask1(int o, int l, int r, int L, int R)
-{
-   if(l == L &amp;&amp; r == R) return t[o].Sum;
-   pushdown(o, l, r);
-   int mid = (l + r) &gt;&gt; 1;
-   if(R &lt;= mid) return ask1(ls, l, mid, L, R);
-   else if(L &gt; mid) return ask1(rs, mid + 1, r, L, R);
-   else return ask1(ls, l, mid, L, mid) + ask1(rs, mid + 1, r, mid + 1, R);
-}
-
-Node ask2(int o, int l, int r, int L, int R)
-{
-   if(l == L &amp;&amp; r == R) return t[o];
-   pushdown(o, l, r);
-   int mid = (l + r) &gt;&gt; 1;
-   if(R &lt;= mid) return ask2(ls, l, mid, L, R);
-   else if(L &gt; mid) return ask2(rs, mid + 1, r, L, R);
-   Node a = ask2(ls, l, mid, L, mid), b = ask2(rs, mid + 1, r, mid + 1, R);
-   return pushup(l, r, a, b, -1);
-}
-
-int main()
-{
-   scanf(&quot;%d %d&quot;, &amp;n, &amp;m);
-   t[1].lazy = 1, t[1].Sum = n;
-   for(int i = 1; i &lt;= m; ++i)
-   {
-       int op, l, r, l1, r1;
-       scanf(&quot;%d %d %d&quot;, &amp;op, &amp;l, &amp;r);
-       if(!op) change0(1, 1, n, l, r);
-       else if(op == 1)
-       {
-           scanf(&quot;%d %d&quot;, &amp;l1, &amp;r1);
-           int tag = ask1(1, 1, n, l, r);
-           change0(1, 1, n, l, r);
-           if(tag) tot = cnt = 0, modify(1, 1, n, l1, r1, tag);
-       }
-       else if(op == 2) printf(&quot;%d\n&quot;, ask2(1, 1, n, l, r).sum);
-   }
-   return 0;
-}
-</code></pre>
-<h2 id="202025">2020.2.5</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4585">FJOI2015 火星商店问题</a></p>
-<p>线段树套可持久化Trie，每个节点用Vector存一下时间，查询的时候二分即可。<br>
-顺便复习了一下可持久化结构。</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-const int MAXN = 100010;
-#define ls (o &lt;&lt; 1)
-#define rs (o &lt;&lt; 1 | 1)
-
-int n, m, rt[MAXN];
-
-struct Trie
-{
-   int ch[2], sum;
-}t[MAXN * 120];
-int cnt = 0;
-
-void ins(int&amp; o, int p, int d, int val)
-{
-   o = ++cnt, t[o] = t[p];
-   ++t[o].sum;
-   if(d == -1) return;
-   bool c = (val &amp; (1 &lt;&lt; d));
-   ins(t[o].ch[c], t[p].ch[c], d - 1, val);
-}
-
-int ask(int l, int r, int d, int val)
-{
-   if(d == -1 || (!l &amp;&amp; !r)) return 0;
-   bool c = (val &amp; (1 &lt;&lt; d));
-   if(t[t[r].ch[!c]].sum - t[t[l].ch[!c]].sum &gt; 0) return (1 &lt;&lt; d) + ask(t[l].ch[!c], t[r].ch[!c], d - 1, val);
-   else return ask(t[l].ch[c], t[r].ch[c], d - 1, val);
-}
-
-struct Node
-{
-   vector&lt;int&gt; times, ids;
-   int nowrt;
-}s[MAXN &lt;&lt; 2];
-
-void build(int o, int l, int r)
-{
-   s[o].times.push_back(0);
-   s[o].ids.push_back(0);
-   s[o].nowrt = 0;
-   if(l == r) return;
-   int mid = (l + r) &gt;&gt; 1;
-   build(ls, l, mid);
-   build(rs, mid + 1, r);
-}
-
-void modify(int o, int l, int r, int pos, int val, int day)
-{
-   s[o].times.push_back(day);
-   int copy = 0;
-   ins(copy, s[o].nowrt, 17, val);
-   s[o].ids.push_back(copy);
-   s[o].nowrt = copy;
-   if(l == r) return;
-   int mid = (l + r) &gt;&gt; 1;
-   if(pos &lt;= mid) modify(ls, l, mid, pos, val, day);
-   else modify(rs, mid + 1, r, pos, val, day);
-}
-
-int query(int o, int l, int r, int L, int R, int x, int d, int day)
-{
-   if(L &lt;= l &amp;&amp; r &lt;= R)
-   {
-       if(s[o].times.size() &lt;= 1 || s[o].times.back() &lt; day - d + 1) return 0;
-       int siz = (int)s[o].times.size();
-       int l = 1, r = siz - 1, ans = siz - 1;
-       while(l &lt;= r)
-       {
-           int mid = (l + r) &gt;&gt; 1;
-           if(s[o].times[mid] &gt;= day - d + 1) ans = mid, r = mid - 1;
-           else l = mid + 1;
-       }
-       return ask(s[o].ids[ans - 1], s[o].nowrt, 17, x);
-   }
-   int mid = (l + r) &gt;&gt; 1, res = 0;
-   if(L &lt;= mid) res = max(res, query(ls, l, mid, L, R, x, d, day));
-   if(R &gt; mid) res = max(res, query(rs, mid + 1, r, L, R, x, d, day));
-   return res;
-}
-
-int main()
-{
-   int day = 0;
-   scanf(&quot;%d %d&quot;, &amp;n, &amp;m);
-   for(int i = 1; i &lt;= n; ++i)
-   {
-       int x; scanf(&quot;%d&quot;, &amp;x);
-       ins(rt[i], rt[i - 1], 17, x);
-   }
-   build(1, 1, n);
-   while(m--)
-   {
-       int op, l, r, x, d;
-       scanf(&quot;%d&quot;, &amp;op);
-       if(!op) ++day;
-       if(!op)
-       {
-           scanf(&quot;%d %d&quot;, &amp;x, &amp;d);
-           modify(1, 1, n, x, d, day);
-       }
-       else if(op == 1)
-       {
-           scanf(&quot;%d %d %d %d&quot;, &amp;l, &amp;r, &amp;x, &amp;d);
-           int ans = ask(rt[l - 1], rt[r], 17, x);
-           ans = max(ans, query(1, 1, n, l, r, x, d, day));
-           printf(&quot;%d\n&quot;, ans);
-       }
-   }
-   return 0;
-}
-</code></pre>
-<h2 id="202026">2020.2.6</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4629">SHOI2015 聚变反应炉</a></p>
-<p>二合一的题目，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>&lt;</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c_i&lt;=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6891em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>时贪心，否则做一个类似背包的树形DP即可。</p>
-<p><a href="https://www.luogu.com.cn/problem/P5043">BJOI2015 树的同构</a></p>
-<p>做法很多，什么最小表示法等等，不过直接简单粗暴的树哈希就可以了。</p>
-<h2 id="202027">2020.2.7</h2>
-<p><a href="https://www.luogu.com.cn/problem/P5502">JSOI2015 最大公约数</a></p>
-<p>有一个性质：长度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的序列的所有子序列的公约数最多只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">logn</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span></span></span></span>个<br>
-于是直接枚举右端点，维护这些公约数即可。<br>
-PS：这个性质在许多和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">gcd</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span></span></span></span>有关的题目中都挺好用的。</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-typedef long long ll;
-
-const int MAXN = 100010;
-
-ll gcd(ll a, ll b)
-
-{
-	if(!b) return a;
-	return gcd(b, a % b);
-
-}
-
-int n; ll ans, a[MAXN];
-ll pos[MAXN], num[MAXN];
-
-int main()
-{
-	scanf(&quot;%d&quot;, &amp;n);
-	for(int i = 1; i &lt;= n; ++i) scanf(&quot;%lld&quot;, &amp;a[i]);
-	int now = 0;
-	for(int i = 1; i &lt;= n; ++i)
-	{
-		++now;
-		pos[now] = i;
-		num[now] = a[i];
-		for(int j = now - 1; j; --j) num[j] = gcd(num[j], num[j + 1]);
-		int k = 0, j = 1;
-		while(j &lt;= now)
-		{
-			++k;
-			pos[k] = pos[j];
-
-			num[k] = num[j];
-
-			while(num[k] == num[j]) ++j;
-
-		}
-		now = k;
-		for(j = 1; j &lt;= now; ++j) ans = max(ans, (i - pos[j] + 1) * num[j]);
-	}
-	printf(&quot;%lld\n&quot;, ans);
-	return 0;
-}
-</code></pre>
-<h2 id="202028">2020.2.8</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3183">HAOI2016 食物链</a></p>
-<p>以前生物课上就脑补过这个问题，，直接按拓扑序DP就行了。</p>
-<p><a href="https://www.luogu.com.cn/problem/P2825">HEOI2016/TJOI2016 游戏</a></p>
-<p>二分图匹配，提取出所有连续的不含#的子段，在每一个*的地方连边即可。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3267">JLOI2016/SHOI2016 侦察守卫</a></p>
-<p>树形DP，这个状态设得好神仙啊，看完题解后都还有点懵。</p>
-<h2 id="202029">2020.2.9</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3736">HAOI2016 字符合并</a></p>
-<p>区间DP+状压DP，转移的时候要注意一下特殊情况。</p>
-<h2 id="2020210">2020.2.10</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4067">SDOI2016储能表</a></p>
-<p>数位DP，取模的时候要注意，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>的范围一不小心就爆掉了。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4068">SDOI2016 数字配对</a></p>
-<p>费用流。这个利用质因数指数之和来判断<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><msub><mi>a</mi><mi>i</mi></msub><msub><mi>a</mi><mi>j</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{a_i}{a_j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.253812em;vertical-align:-0.5423199999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7114919999999999em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5423199999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>是否是质数的想法太妙了。</p>
-<h2 id="2020211">2020.2.11</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3698">CQOI2017 小Q的棋盘</a></p>
-<p>贪心，沿着最长链走。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3758">TJOI2017 可乐</a></p>
-<p>矩阵快速幂。因为数组没清零硬是调了一个下午。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4092">HEOI2016/TJOI2016 树</a></p>
-<p>树链剖分，维护深度即可。</p>
-<h2 id="2020212">2020.2.12</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4079">SDOI2016 齿轮</a></p>
-<p>题目有点难读懂，不过读懂后就好做了，写个分数类然后dfs即可。</p>
-<p><a href="https://www.luogu.com.cn/blog/Kesdiael3/hou-zhui-zi-dong-ji-yang-xie">史上最通俗的后缀自动机详解</a></p>
-<p>学习SAM，之前学过现在又差不多忘了，之后会写一篇博客以便强化记忆。</p>
-<h2 id="2020213">2020.2.13</h2>
-<p><a href="https://aegirss.github.io/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/">后缀自动机学习笔记</a></p>
-<h2 id="2020215">2020.2.15</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4072">SDOI2016 征途</a></p>
-<p>斜率优化DP，拆开式子化一下就好了。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4093">HEOI2016/TJOI2016 序列</a></p>
-<p>DP的式子本质上是个三维偏序，CDQ分治。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4340">SHOI2016 随机序列</a></p>
-<p>线段树。这题神啊。</p>
-<h2 id="2020216">2020.2.16</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4357">CQOI2016 K远点对</a></p>
-<p>KD-Tree，注意一对点会被统计两次。</p>
-<h2 id="2020218">2020.2.18</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4336">SHOI2016 黑暗前的幻想乡</a></p>
-<p>容斥原理+Matrix-Tree定理。</p>
-<h2 id="2020219">2020.2.19</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4124">CQOI2016 手机号码</a></p>
-<p>数位DP。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4123">CQOI2016 不同的最小割</a></p>
-<p>最小割树模板题，新技能get。</p>
-<h2 id="2020220">2020.2.20</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4358">CQOI2016 密钥破解</a></p>
-<p>破解RSA加密，用Pollard rho算法分解质因数。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4359">CQOI2016 伪光滑数</a></p>
-<p>用堆维护，枚举的时候要注意避免重复。</p>
-<h2 id="2020221">2020.2.21</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4587">FJOI2016 神秘数</a></p>
-<p>主席树。</p>
-<p><a href="https://www.luogu.com.cn/problem/P4609">FJOI2016 建筑师</a></p>
-<p>组合数学，第一类斯特林数。</p>
-<p><a href="https://www.luogu.com.cn/problem/P5459">BJOI2016 回转寿司</a></p>
-<p>没必要离散化，直接用动态开点线段树就行了，内存刚好够。</p>
-<h2 id="2020222">2020.2.22</h2>
-<p><a href="https://www.luogu.com.cn/problem/P4608">FJOI2016 所有公共子序列问题</a></p>
-<p>序列自动机上DP，注意这题要写压位高精。</p>
-<h2 id="2020223">2020.2.23</h2>
-<p>XJOI-提高</p>
-<p>T1：枚举每个数，直接模拟就行了。</p>
-<p>T2：把矩形沿着对角线对折，然后跑最短路。</p>
-<p>T3：不会，，写了个30分的DFS套DFS。</p>
-<p>XJOI-省选</p>
-<p>看了一下都不会做，，，前两个题写了个暴力</p>
-<p>T3随便写了写，居然有70分，，，</p>
-<h2 id="2020224">2020.2.24</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3760">TJOI2017 异或和</a></p>
-<p>按位枚举，然后权值树状数组维护。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3761">TJOI2017 城市</a></p>
-<p>枚举每条边，然后求一下两个联通块的半径和直径即可。</p>
-<h2 id="2020226">2020.2.26</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3745">六省联考2017 期末考试</a></p>
-<p>发现代价只与结束时间有关，枚举结束时间贪心即可。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3750">六省联考2017 分手是祝愿</a></p>
-<p>神仙题啊！这个DP真的神奇。</p>
-<h2 id="2020227">2020.2.27</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3749">六省联考2017 寿司餐厅</a></p>
-<p>注意到权值不重复计算，从而想到最大权闭合子图，然后建图求最小割。</p>
-<h2 id="2020229">2020.2.29</h2>
-<p><a href="https://www.luogu.com.cn/problem/P3746">六省联考2017 组合数问题</a></p>
-<p>考虑组合意义，然后DP，矩阵加速。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3705">SDOI2017 新生舞会</a></p>
-<p>分数规划套费用流</p>
-
-            </div>
-            
-            <div class="prev-post">
-                上一篇
-                <a href="https://Aegirss.github.io/post/du-jiao-shai/">
-                    杜教筛
-                </a>
-            </div>
-            
-            
-            <div class="next-post">
-                下一篇
-                <a href="https://Aegirss.github.io/post/mo-bi-wu-si-fan-yan/">
-                    莫比乌斯反演
-                </a>
-            </div>
-            
-        </div>
-    </div>
-</body>
-<script>
-    var t_img; // 定时器
-    var isLoad = true; // 控制变量
-    isImgLoad(function () {
-        // 加载完成
-        $('.postdetailimg').css("display", "block");
-    });
-    // 判断图片加载的函数
-    function isImgLoad(callback) {
-        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
-        // 查找所有封面图，迭代处理
-        $('.postdetailimg').each(function () {
-            // 找到为0就将isLoad设为false，并退出each
-            if (this.height === 0) {
-                isLoad = false;
-                return false;
-            }
-        });
-        // 为true，没有发现为0的。加载完毕
-        if (isLoad) {
-            clearTimeout(t_img); // 清除定时器
-            // 回调函数
-            callback();
-            // 为false，因为找到了没有加载完成的图，将调用定时器递归
-        } else {
-            isLoad = true;
-            t_img = setTimeout(function () {
-                isImgLoad(callback); // 递归扫描
-            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
-        }
-    }
-</script>
-        <div name="comment" style="background: white">
-            <div class="commentcontainer">
-                
-                
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
@@ -1528,12 +589,12 @@ int main()
 <script>
 
   var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    clientID: 'f81beddc4368376c721f',
+    clientSecret: '55aded7af5d63837a610dea7f56bd48978fbb1f6',
+    repo: 'Aegirss.github.io',
+    owner: 'Aegirss',
+    admin: ['Aegirss'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
@@ -1541,18 +602,45 @@ int main()
 
 </script>
 
-                
-                
-                
-            </div>
-        </div>
-    </div>
+            
 
-</body>
+            
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Think twice, code once.</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Aegirss" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://twitter.com/Aegir233" target="_blank">
+                    <i class="fab fa-twitter gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    Powered by  <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://Aegirss.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
 <script>
     hljs.initHighlightingOnLoad()
 </script>
-<script src="https://Aegirss.github.io//media/js/post.js"></script>
 
-<script src="https://l2dwidget.js.org//lib/L2Dwidget.min.js"></script>
-<script src="https://Aegirss.github.io//media/js/live2d.js"></script>
+
+    </div>
+</div>
+</body>
+</html>
