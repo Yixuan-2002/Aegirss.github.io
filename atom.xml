@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-04-19T04:07:34.231Z</updated>
+    <updated>2020-04-19T04:09:18.511Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -96,6 +96,7 @@
 <p>上面的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">DP</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span>转移式是一个卷积形式，使用分治<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mi>T</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">NTT</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>优化即可。</p>
 <h2 id="2020419-">2020.4.19-</h2>
 <p>学一波多项式，估计要花一点时间。</p>
+<p><a href="https://aegirss.github.io/post/duo-xiang-shi-xue-xi-bi-ji/">多项式学习笔记</a></p>
 ]]></content>
     </entry>
     <entry>
