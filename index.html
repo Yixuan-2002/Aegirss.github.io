@@ -2,14 +2,14 @@
 <html>
   <head>
       <meta charset="UTF-8"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="Gridea静态个人博客">
-<meta name="description" content="Think twice, code once.">
+<meta name="description" content="精于心，简于形">
 <meta name="theme-color" content="#000">
 <title>Aegir</title>
-<link rel="shortcut icon" href="https://Aegirss.github.io//favicon.ico?v=1587300628578">
-<link rel="stylesheet" href="https://Aegirss.github.io//styles/main.css">
-
+<link rel="shortcut icon" href="/favicon.ico?v=1587302146265">
+<link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
 
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -49,7 +49,7 @@
           
         </div>
         
-          <p class="subtitle">Think twice, code once</p>
+          <p class="subtitle">Think twice, Code once</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -57,7 +57,8 @@
           
             <li class="nav-item nav-item-active">
               
-                <a href="/">
+              
+                <a href="/" target="_self">
                   <i class="fa fa-home"></i> 首页
                 </a>
               
@@ -65,7 +66,8 @@
           
             <li class="nav-item ">
               
-                <a href="/archives">
+              
+                <a href="/archives" target="_self">
                   <i class="fa fa-archive"></i> 归档
                 </a>
               
@@ -73,7 +75,8 @@
           
             <li class="nav-item ">
               
-                <a href="/tags">
+              
+                <a href="/tags" target="_self">
                   <i class="fa fa-tags"></i> 标签
                 </a>
               
@@ -116,11 +119,11 @@
       
       <div class="section-layout pisces ">
         <div class="section-layout-wrapper">
-          <div class="sidebar">
+          <div id="sidebarMeta" class="sidebar">
     
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="https://Aegirss.github.io//images/avatar.png"/>
+    <img class="site-author-image right-motion" src="http://localhost:4000/images/avatar.png"/>
     <p class="site-author-name">Aegir</p>
     <p class="site-description right-motion">精于心，简于形</p>
   </div>
@@ -150,28 +153,11 @@
       <div class="sidebar-item">
         <span class="site-item-rss">
             <i class="fa fa-rss"></i>
-            <a href="https://Aegirss.github.io//atom.xml" target="_blank">RSS</a>
+            <a href="http://localhost:4000/atom.xml" target="_blank">RSS</a>
         </span>
       </div>
     
   
-  
-    <div class="sidebar-item sidebar-item-social">
-      <div class="social-item">
-        
-          
-            <a href="https://twitter.com/Aegir233">
-              <i class="fa fa-twitter"></i> Twitter
-            </a>
-          
-            <a href="https://github.com/Aegirss">
-              <i class="fa fa-github"></i> Github
-            </a>
-          
-        
-        
-      </div>
-    </div>
   
 
 
@@ -196,6 +182,20 @@
 
 </div>
 </div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
           <div class="section-box pisces">
             <section class="section bg-color posts-expand slide-down-in">
               
@@ -203,7 +203,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-4-yue/">
+    <a class="post-title-link" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-4-yue/">
       做题&amp;学习记录（4月）
     </a>
   </h1>
@@ -219,15 +219,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-04-01</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/1BGdjUVip/">
+            <a href="http://localhost:4000/tag/1BGdjUVip/">
               <span>总结</span>
             </a>
           
@@ -244,6 +244,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>1427<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -252,7 +253,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-4-yue/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-4-yue/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -270,7 +271,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/duo-xiang-shi-xue-xi-bi-ji/">
+    <a class="post-title-link" href="http://localhost:4000/post/duo-xiang-shi-xue-xi-bi-ji/">
       多项式学习笔记
     </a>
   </h1>
@@ -280,15 +281,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-04-18</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/xGeNiHK5x/">
+            <a href="http://localhost:4000/tag/xGeNiHK5x/">
               <span>数学</span>
             </a>
           
@@ -303,8 +304,9 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1164<span class="pc-show">字数</span></span>
+      <span>1170<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -313,7 +315,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/duo-xiang-shi-xue-xi-bi-ji/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/duo-xiang-shi-xue-xi-bi-ji/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -331,7 +333,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-3-yue/">
+    <a class="post-title-link" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-3-yue/">
       做题&amp;学习记录（3月）
     </a>
   </h1>
@@ -341,15 +343,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-03-01</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/1BGdjUVip/">
+            <a href="http://localhost:4000/tag/1BGdjUVip/">
               <span>总结</span>
             </a>
           
@@ -366,6 +368,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>3492<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -374,7 +377,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-3-yue/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-3-yue/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -392,7 +395,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/">
+    <a class="post-title-link" href="http://localhost:4000/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/">
       后缀自动机学习笔记
     </a>
   </h1>
@@ -402,15 +405,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-02-13</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/w-bpm7WUs/">
+            <a href="http://localhost:4000/tag/w-bpm7WUs/">
               <span>字符串</span>
             </a>
           
@@ -427,6 +430,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>2426<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -435,7 +439,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/hou-zhui-zi-dong-ji-xue-xi-bi-ji/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -453,7 +457,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/qian-tan-xie-lu-you-hua/">
+    <a class="post-title-link" href="http://localhost:4000/post/qian-tan-xie-lu-you-hua/">
       浅谈斜率优化
     </a>
   </h1>
@@ -463,15 +467,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-02-09</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/bCRsljdZw/">
+            <a href="http://localhost:4000/tag/bCRsljdZw/">
               <span>DP（斜率优化）</span>
             </a>
           
@@ -488,6 +492,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>2711<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -496,7 +501,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/qian-tan-xie-lu-you-hua/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/qian-tan-xie-lu-you-hua/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -514,7 +519,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/du-jiao-shai/">
+    <a class="post-title-link" href="http://localhost:4000/post/du-jiao-shai/">
       杜教筛
     </a>
   </h1>
@@ -524,15 +529,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-02-08</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/QMotWRiyF/">
+            <a href="http://localhost:4000/tag/QMotWRiyF/">
               <span>数论</span>
             </a>
           
@@ -549,6 +554,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>1403<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -557,7 +563,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/du-jiao-shai/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/du-jiao-shai/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -575,7 +581,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-2-yue/">
+    <a class="post-title-link" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-2-yue/">
       做题&amp;学习记录（2月）
     </a>
   </h1>
@@ -585,15 +591,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-02-07</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/1BGdjUVip/">
+            <a href="http://localhost:4000/tag/1BGdjUVip/">
               <span>总结</span>
             </a>
           
@@ -610,6 +616,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>3108<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -618,7 +625,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/zuo-ti-andxue-xi-ji-lu-2-yue/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/zuo-ti-andxue-xi-ji-lu-2-yue/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -636,7 +643,7 @@
     <div class="article-wrapper bg-color">
       <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Aegirss.github.io/post/mo-bi-wu-si-fan-yan/">
+    <a class="post-title-link" href="http://localhost:4000/post/mo-bi-wu-si-fan-yan/">
       莫比乌斯反演
     </a>
   </h1>
@@ -646,15 +653,15 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2020-02-07</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://Aegirss.github.io/tag/QMotWRiyF/">
+            <a href="http://localhost:4000/tag/QMotWRiyF/">
               <span>数论</span>
             </a>
           
@@ -671,6 +678,7 @@
       <i class="fa fa-file-word-o"></i>
       <span>2575<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
       <div class="post-body">
@@ -679,7 +687,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://Aegirss.github.io/post/mo-bi-wu-si-fan-yan/" rel="contents">
+          <a class="btn" href="http://localhost:4000/post/mo-bi-wu-si-fan-yan/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -717,7 +725,7 @@
       <div class="footer-box">
   <footer class="footer">
     <div class="copyright">
-      © 2019-2020 <i class="fa fa-heart"></i> HsxyHao
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
     </div>
     <div class="poweredby">
       Powered by  <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
@@ -768,7 +776,7 @@
   </div>
 </div>
 <div id="open_live2d">召唤伊斯特瓦尔</div>
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script>
 var message_Path = '/media/live2d/histoire/';
 let landlord = document.querySelector('#landlord');
@@ -911,6 +919,7 @@ var apiKey = landlord.dataset.key;
 
   // 代码高亮
   hljs.initHighlightingOnLoad();
+
 </script>
     </div>
   </body>
