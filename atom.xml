@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Aegirss.github.io/</id>
     <title>Aegir</title>
-    <updated>2020-04-22T09:03:47.652Z</updated>
+    <updated>2020-04-22T14:00:03.155Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Aegirss.github.io/"/>
     <link rel="self" href="https://Aegirss.github.io/atom.xml"/>
@@ -156,6 +156,92 @@ int main()
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mi>a</mi><msub><mi>l</mi><mi>x</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mi>l</mi></mrow><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow></munderover><msub><mi>f</mi><mi>i</mi></msub><mo>∗</mo><msub><mi>g</mi><mrow><mi>x</mi><mo>−</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">val_x=\sum_{i=l}^{mid}f_i * g_{x-i}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.01968em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.1382260000000004em;vertical-align:-1.302113em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.836113em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span></span></p>
 <p>于是这部分的贡献可以利用卷积来快速计算。时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>l</mi><mi>o</mi><msup><mi>g</mi><mn>2</mn></msup><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nlog^2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+typedef long long ll;
+
+ll Pow(ll a, ll b, ll p)
+{
+	ll ans = 1 % p;
+	for(; b; b &gt;&gt;= 1)
+	{
+		if(b &amp; 1) ans = ans * a % p;
+		a = a * a % p;
+	}
+	return ans;
+}
+
+const ll MOD = 998244353, G = 3, Gi = Pow(G, MOD - 2, MOD);
+const int MAXN = 400010;
+
+int rev[MAXN];
+void change(ll y[], int len)
+{
+	for(int i = 0; i &lt; len; ++i)
+	{
+		rev[i] = rev[i &gt;&gt; 1] &gt;&gt; 1;
+		if(i &amp; 1) rev[i] |= len &gt;&gt; 1;
+	}
+	for(int i = 0; i &lt; len; ++i)
+		if(i &lt; rev[i]) swap(y[i], y[rev[i]]);
+}
+
+void NTT(ll y[], int len, int op)
+{
+	change(y, len);
+	for(int h = 2; h &lt;= len; h &lt;&lt;= 1)
+	{
+		ll wn = Pow(op == 1 ? G : Gi, (MOD - 1) / h, MOD);
+		for(int j = 0; j &lt; len; j += h)
+		{
+			ll step = 1;
+			for(int k = j; k &lt; j + h / 2; ++k)
+			{
+				ll u = y[k], t = step * y[k + h / 2] % MOD;
+				y[k] = (u + t) % MOD;
+				y[k + h / 2] = (u - t + MOD) % MOD;
+				step = step * wn % MOD;
+			}
+		}
+	}
+	if(op == -1)
+	{
+		ll inv = Pow(len, MOD - 2, MOD);
+		for(int i = 0; i &lt; len; ++i) y[i] = y[i] * inv % MOD;
+	}
+}
+
+ll f[MAXN], g[MAXN];
+ll a[MAXN], b[MAXN], c[MAXN];
+
+void CDQ(int l, int r)
+{
+	if(l == r) return;
+	int mid = (l + r) &gt;&gt; 1;
+	CDQ(l, mid);
+	int len = 1;
+	while(len &lt;= 2 * (r - l + 1)) len &lt;&lt;= 1;
+	for(int i = 0; i &lt; len; ++i) a[i] = b[i] = 0;
+	for(int i = l; i &lt;= mid; ++i) a[i - l] = f[i];
+	for(int i = 0; i &lt; r - l + 1; ++i) b[i] = g[i];
+	NTT(a, len, 1); NTT(b, len, 1);
+	for(int i = 0; i &lt; len; ++i) a[i] = a[i] * b[i] % MOD;
+	NTT(a, len, -1);
+	for(int i = mid + 1; i &lt;= r; ++i) f[i] = (f[i] + a[i - l]) % MOD;
+	CDQ(mid + 1, r);
+}
+
+int main()
+{
+	int n; scanf(&quot;%d&quot;, &amp;n);
+	for(int i = 1; i &lt; n; ++i) scanf(&quot;%lld&quot;, &amp;g[i]);
+	f[0] = 1;
+	CDQ(0, n - 1);
+	for(int i = 0; i &lt; n; ++i) printf(&quot;%lld &quot;, f[i]);
+	return putchar('\n'), 0;
+}
+</code></pre>
 ]]></content>
     </entry>
     <entry>
